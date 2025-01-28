@@ -1,0 +1,35 @@
+@import './base.css';
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.hidden-button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Pour l'animation de clic */
+}
+
+.clickable:active {
+  transform: scale(0.95); 
+}
+
+.clickable:hover {
+  cursor: pointer; 
+}

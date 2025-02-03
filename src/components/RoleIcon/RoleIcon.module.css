@@ -1,0 +1,6 @@
+.role-icon {
+  margin-right: 10px;
+}
+.role-icon path {
+  fill: var(--color-heading);
+}

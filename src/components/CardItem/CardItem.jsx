@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CardItem.module.css';
 import PublicIcon from '../icons/IconPublic.jsx';
-// import RoleIcon from '../icons/IconRole.jsx';
+import RoleIcon from '../RoleIcon/RoleIcon.jsx';
 // import ActionsButtons from './ActionsButtons.jsx';
 
 export default function CardItem({ item }) {
@@ -12,7 +12,7 @@ export default function CardItem({ item }) {
       <header className={styles['card-header']}>
         <input className={styles['card-header-checkbox']} type="checkbox"/>
         <p className={styles['card-author']}>
-          {/* <RoleIcon iconClass={item.iconClass} /> */}
+          <RoleIcon iconClass={item.iconClass} />
           <span className={`${styles.title} ${styles['title-size-1']}`}>{item.userName}</span>
         </p>
       </header>
